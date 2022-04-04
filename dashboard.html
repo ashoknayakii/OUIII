@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Fredoka+One&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+    <link rel="stylesheet" href="/css/dashboard.css" />
+    <title>GETParty!</title>
+</head>
+
+<body>
+    <div class="tile is-ancestor" id="main-dashboard">
+        <div class="tile is-4 is-parent notification is-success">
+            <div class="content">
+                <p class="title">GETParty</p>
+                <p class="subtitle">With even more content</p>
+                <div>
+                    <nav>
+                        <ul>
+                            <li>Search for Parties</li>
+                            <!-- <select id="search-distance" class="distance-menu"></select> -->
+
+                            <form>
+
+                                <p>Over 21:</p>
+                                <input type="radio" name="age-confirm" id="21-true" />
+                                <label for="21-true">Yes</label>
+                                <input type="radio" name="age-confirm" id="21-false" />
+                                <label for="21-false">No</label>
+
+
+                                <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                                    <option selected>Pick a party theme:</option>
+                                    <option value="costume">costume</option>
+                                    <option value="kegger">kegger</option>
+                                    <option value="tailgate">tailgate</option>
+                                    <option value="fancy cocktails">fancy cocktails</option>
+                                    <option value="dinner">dinner</option>
+                                </select>
+
+                            </form>
+                            <li>
+                                <a href="/create-party.handlebars">Create a Party</a>
+                            </li>
+                            <li>
+                                <a href="/my-parties.handlebars">My Parties</a>
+                            </li>
+                            <li>
+                                <button id="logout" class="btn-no-style">logout</button>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+            <article class="tile is-3 is-child">
+
+            </article>
+        </div>
+    </div>
+
+    <main class="col-12 col-lg-9 d-flex flex-column">
+
+
+        <!-- {{{body}}}
+      {{!-- Handlebars for Party Card which will have to be clickable to expand into larger view --}} -->
+    </main>
+
+
+
+    <!-- {{#if loggedIn}} --}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}} -->
+</body>
+
+</html>
