@@ -1,0 +1,71 @@
+/* ZERO OUT ANY USER-AGENT-ASSIGNED MARGINS, PADDINGS, ETC. */ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+.homepage-navbar {
+    padding: 10px 35px; 
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 9999;
+  }
+
+
+.app-name {
+      font-size: 68px;
+      font-weight: bold;
+      color: #FAC710;
+}
+
+#hero-frame {
+    background-image: url('../images/housepartyhero.jpeg');
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    opacity: .90;
+    align-items: flex-start;
+    background-attachment: fixed;
+    flex-wrap: wrap;
+    background-position: 100%;
+}
+
+.app-slogan {
+    font-size: 68px;
+    display: flex;
+    align-items: center;
+}
+
+.app-slogan h1 {
+    color: #FAC710;
+}
+
+footer {
+    display: flex;
+    /* background-color: black; */
+    width: 100%;
+    padding: 25px 35px;
+    justify-content: space-between;
+    position: absolute bottom;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.enter-btn {
+    font-size: 18px;
+    font-weight: bold;
+    border-width: 0;
+    box-shadow: 0px 0px 5px #92834d;
+    background-color: #FAC710;
+    background-image: linear-gradient(135deg, #ecc344 0%, #b3811e 100%);
+    padding: 15px;
+    border-radius: 30px;
+    color: #472352;
+}

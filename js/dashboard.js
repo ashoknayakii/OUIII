@@ -30,4 +30,4 @@ searchParty.addEventListener('click', () => {
 
 searchClose.addEventListener('click', () => {
     searchModal.classList.remove('is-active');
-})
+});

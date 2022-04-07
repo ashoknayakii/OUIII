@@ -1,26 +1,30 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Fredoka One', cursive;
+    /* font-family: 'Fredoka One', cursive; */
+    font-family: 'Montserrat';
     color: #472352;
 }
 
 body {
-    margin: 3px;
-    padding: 3px;
+    margin: 0;
+    padding: 0;
+    background-color: #EEE6E6;
 }
 
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #EEE6E6;
+    background-color: #dcc5c5;
     color: #472353;
-    box-shadow: 0px 0px 5px #cfd8dc;
+    box-shadow: 0px 0px 5px #dadccf;
 }
 
 .app-title {
-    font-size: 1.5rem;
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 2.5rem;
     margin: 1rem;
 }
 
@@ -37,12 +41,13 @@ body {
 .navbar-links li a {
     text-decoration: none;
     color: #472353;
+    font-weight: bold;
     padding: 1rem;
     display: block;
 }
 
 .nav-list {
-    background: #EEE6E6;
+    background: #dcc5c5;
     margin: 0;
     padding: 1rem 0;
     border-radius: 8px;
@@ -56,14 +61,20 @@ body {
     display: block;
 }
 
-.navbar-links li:hover {
+.navbar-links li a:hover {
+    color: #EEE6E6;
     background-color: #b26cdd;
     border-radius: 30px;
 }
 
+.logout-button {
+    /* border-radius: 30px; */
+    padding: 1rem;
+}
+
 .toggle-button {
     position: absolute;
-    top: 1.25rem;
+    top: 2.25rem;
     right: 1rem;
     display: none;
     flex-direction: column;
@@ -118,6 +129,34 @@ body {
     margin-top: 20px;
 }
 
+.form-header {
+    font-size: 24px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.party-card {
+    display: flex;
+    margin: 35px;
+    border-radius: 30px;
+    color: #dcc5c5;
+    box-shadow: 0px 0px 5px #cfd8dc;
+}
+
+.card-header {
+    font-size: 1.25rem;
+    padding: 20px;
+}
+
+.party-image {
+    display: flex;
+    width: 400px;
+}
+
+.card-date {
+    justify-content: center;
+}
+
 @media (max-width: 750px) {
     .toggle-button {
         display: flex;
@@ -151,13 +190,6 @@ body {
     }
 }
 
-/* .create-form {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
 
-textarea {
-    background-color: #EEE6E6
-} */ 
+
+
